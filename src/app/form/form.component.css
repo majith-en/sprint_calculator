@@ -1,0 +1,18 @@
+.form-heading {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+.card {
+    margin-top: 30px;
+    padding: 20px;
+    margin-right: 3px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.add-story {
+    text-align: end;
+}

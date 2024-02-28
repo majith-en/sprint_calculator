@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="col-12">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+            <div class="form-heading">Add Story</div>
+        <form [formGroup]="storyForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label class="form-label">Story:</label>
+            <input type="text" formControlName="story" class="form-control" />
+          </div>
+
+          <label class="form-label">Points: </label>
+          <input type="number" formControlName="points" class="form-control" />
+
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-success add-story" type="submit">Add Story</button>
+          </div>
+          
+        </form>
+        </div>
+        
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6" *ngIf="storyService?.getStories()?.length != 0">
+        <div class="card">
+             <app-display (getIndex)="indexDatas($event)"></app-display>
+        </div>
+       
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+           <app-sprint [getIndexs]="getSelectedIndex"></app-sprint> 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
