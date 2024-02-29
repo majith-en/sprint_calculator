@@ -1,0 +1,19 @@
+.list-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list-points {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card {
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.selected {
+    background-color: aliceblue;
+}

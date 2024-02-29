@@ -21,18 +21,27 @@
         </div>
         
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6" *ngIf="storyService?.getStories()?.length != 0">
-        <div class="card">
-             <app-display (getIndex)="indexDatas($event)"></app-display>
-        </div>
-       
-      </div>
+      
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="card">
            <app-sprint [getIndexs]="getSelectedIndex"></app-sprint> 
         </div>
         
       </div>
+      <div class="col-sm-12 col-md-6 col-lg-6" *ngIf="storyService?.getStories()?.length != 0">
+        <div class="card">
+             <app-display (getIndex)="indexDatas($event)"></app-display>
+        </div>
+       
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6" *ngIf="storyService?.getSprints()?.length != 0">
+        <div class="card">
+             <app-sprint-display></app-sprint-display>
+        </div>
+       
+      </div>
+
+      
     </div>
   </div>
 </div>

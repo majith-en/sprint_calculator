@@ -1,11 +1,12 @@
 
 
 
-<form>
+<form [formGroup]="sprintForm">
     <div>
         <label class="form-label">Target Sprint Points:</label>
-        <input class="form-control" type="number" [(ngModel)]="targetSprintPoints">
+        <input class="form-control" formControlName="sprint" type="number">
     </div>
+</form>
     
    <div class="d-flex justify-content-between srint-buttons">
         <button (click)="autoSelectStories()" class="btn btn-success">Auto Select Stories</button>
@@ -13,4 +14,3 @@
         <button (click)="clearSelectedStories()" class="btn btn-danger">Clear Selected Stories</button>
    </div>
     
-  </form>

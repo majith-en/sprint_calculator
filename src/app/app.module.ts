@@ -7,13 +7,15 @@ import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SprintComponent } from './sprint/sprint.component';
+import { SprintDisplayComponent } from './sprint-display/sprint-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     DisplayComponent,
-    SprintComponent
+    SprintComponent,
+    SprintDisplayComponent
   ],
   imports: [
     BrowserModule,

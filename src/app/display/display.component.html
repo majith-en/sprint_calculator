@@ -1,5 +1,5 @@
 <div *ngFor="let story of storyService.getStories(); let i= index">
-    <div class="card" (click)="onclickCard(i)" [ngStyle]="selectedIndex === i ? {'background-color' : 'aliceblue'} : {'background-color' : 'white'}">
+    <div class="card" (click)="onclickCard(story.story)" [ngStyle]="selectedIndex === story.story ? {'background-color' : 'aliceblue'} : {'background-color' : 'white'}">
         <div class="list-heading">{{ story.story }}</div>
     <div class="list-points">Points : {{ story.points }}</div>
     </div> 
